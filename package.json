@@ -1,0 +1,33 @@
+{
+  "name": "nodejs-tape",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoopschat/nodejs-tape.git"
+  },
+  "author": "liangmayong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whoopschat/nodejs-tape/issues"
+  },
+  "homepage": "https://github.com/whoopschat/nodejs-tape#readme",
+  "dependencies": {
+    "ect": "^0.5.9",
+    "cors": "2.8.5",
+    "helmet": "^1.1.0",
+    "moment": "^2.11.2",
+    "morgan": "^1.7.0",
+    "express": "^4.13.4",
+    "connect-flash": "^0.1.1",
+    "body-parser": "^1.15.0",
+    "serve-favicon": "^2.3.0",
+    "underscore": "^1.8.3",
+    "winston": "^3.0.0",
+    "winston-daily-rotate-file": "^3.3.0"
+  }
+}
