@@ -27,7 +27,7 @@ Tape.createApp({
             }
             if (!_Error.code) {
                 _Error.code = 500;
-                _Error.msg = '服务器错误';
+                _Error.msg = 'Server Error';
             }
             res.json(_Error);
         }

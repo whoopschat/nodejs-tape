@@ -1,6 +1,6 @@
 {
   "name": "nodejs-tape",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,11 +11,21 @@
     "url": "git+https://github.com/whoopschat/nodejs-tape.git"
   },
   "author": "liangmayong",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/whoopschat/nodejs-tape/issues"
   },
-  "homepage": "https://github.com/whoopschat/nodejs-tape#readme",
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "keywords": [
+    "nodejs",
+    "tape"
+  ],
+  "files": [
+    "lib",
+    "index.js"
+  ],
   "dependencies": {
     "ect": "^0.5.9",
     "cors": "2.8.5",
