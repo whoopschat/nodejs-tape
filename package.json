@@ -20,7 +20,8 @@
   },
   "keywords": [
     "nodejs",
-    "tape"
+    "tape",
+    "nodejs-tape"
   ],
   "files": [
     "lib",
