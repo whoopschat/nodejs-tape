@@ -4,6 +4,6 @@ exports.routes = {
   '*': { all: 'index' }
 }
 
-exports.index = function (req, res) {
+exports.index = function (req, res, next) {
   res.send('Hello World');
 }

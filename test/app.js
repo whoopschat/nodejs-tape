@@ -1,6 +1,6 @@
 const Tape = require('../index');
 
-Tape.createApp({
+Tape.start({
     root: __dirname,
     name: "nodejs-tape",
     port: 3000,
