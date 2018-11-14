@@ -1,46 +1,35 @@
-
-var env = process.env.NODE_ENV || 'development';
-
 const Tape = require('../index');
 
-Tape.start({
-    "name": "mobydick-test-server",
-    "port": 3000,
-    "logs": "./logs",
-    "views": "./views",
-    "static": [
+Tape.createApp({
+    root: __dirname,
+    name: "nodejs-tape",
+    port: 3000,
+    logs: "./logs",
+    views: "./views",
+    static: [
         "./public",
-        "./bower_components"
+        "./bower_components",
+        "./assets"
     ],
-    "routes": [
+    routes: [
         "./routes"
     ],
-}, {
-        root: __dirname,
-
-        beforeRoute: [
-            function (req, res, next) {
-                return next();
+    beforeRoute: [
+        function (req, res, next) {
+            return next();
+        }
+    ],
+    afterRoute: [
+        function (err, req, res, next) {
+            let _Error = {
+                code: err.code || err.status || 500,
+                msg: err.msg || err.toString(),
             }
-        ],
-
-        afterRoute: [
-            function (err, req, res, next) {
-
-                res.status(err.status || 500);
-
-                var customErr = (env != 'production') ? err : {
-                    code: err.status,
-                    msg: 'Server Error'
-                }
-
-                if (req.xhr) {
-                    res.send(customErr);
-                } else {
-                    res.render('error', {
-                        error: customErr
-                    });
-                }
+            if (!_Error.code) {
+                _Error.code = 500;
+                _Error.msg = '服务器错误';
             }
-        ]
-    })
+            res.json(_Error);
+        }
+    ]
+})

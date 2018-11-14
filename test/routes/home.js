@@ -1,11 +1,9 @@
 'use strict';
 
 exports.routes = {
-  '/': { get: 'index' }
+  '*': { all: 'index' }
 }
 
-exports.index = function(req, res) {
-  res.render('index', {
-    title: 'Mobydick'
-  });
+exports.index = function (req, res) {
+  res.send('Hello World');
 }
