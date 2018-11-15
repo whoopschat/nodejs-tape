@@ -1,6 +1,6 @@
 {
   "name": "nodejs-tape",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -36,6 +36,7 @@
     "express": "^4.13.4",
     "connect-flash": "^0.1.1",
     "body-parser": "^1.15.0",
+    "body-parser-xml": "^1.1.0",
     "serve-favicon": "^2.3.0",
     "underscore": "^1.8.3",
     "winston": "^3.0.0",
