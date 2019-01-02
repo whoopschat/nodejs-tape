@@ -1,14 +1,12 @@
 # nodejs-tape
 > a nodejs framework
 
-### Usage
-
-#### 1.install
+#### Install
 ```
-> npm install nodejs-tape
+> npm install nodejs-tape --save-dev
 ```
 
-#### 2.usage
+#### Usage
 ```js
 // app.js
 const Tape = require('nodejs-tape');
@@ -46,7 +44,7 @@ Tape.createApp({
     ]
 })
 
-// router
+// ./routes/index.js
 'use strict';
 
 exports.routes = {

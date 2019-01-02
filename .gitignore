@@ -1,3 +1,4 @@
 test/logs/
 test/assets/
+test/.storage/
 node_modules/

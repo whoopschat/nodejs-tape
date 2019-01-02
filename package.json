@@ -1,9 +1,10 @@
 {
   "name": "nodejs-tape",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node ./test/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -33,6 +34,7 @@
     "helmet": "^1.1.0",
     "moment": "^2.11.2",
     "morgan": "^1.7.0",
+    "multer": "^1.4.1",
     "express": "^4.13.4",
     "connect-flash": "^0.1.1",
     "body-parser": "^1.15.0",
