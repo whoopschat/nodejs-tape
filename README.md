@@ -1,6 +1,11 @@
 # nodejs-tape
 > a nodejs framework
 
+#### Version
+```
+1.2.0
+```
+
 #### Install
 ```
 > npm install nodejs-tape --save-dev
@@ -17,6 +22,8 @@ Tape.start({
     port: 3000,
     logs: "./logs",
     views: "./views",
+    upload: "./assets/upload",
+    storage: "./assets/storage",
     static: [
         "./public",
         "./bower_components",
