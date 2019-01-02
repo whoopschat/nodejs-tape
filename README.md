@@ -47,6 +47,7 @@ Tape.start({
 ```
 router
 ```js
+// routes/index.js
 'use strict';
 
 exports.routes = {
