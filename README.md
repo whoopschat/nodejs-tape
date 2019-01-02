@@ -49,12 +49,14 @@ router
 ```js
 // routes/index.js
 'use strict';
+const Tape = require('../../index');
 
 exports.routes = {
-  '/': { get: 'index' }
+  '/': { get: 'index' },
+  '/upload': { post: Tape.createUploader() },
 }
 
-exports.index = function (req, res) {
-  res.send('Hello World');
+exports.index = function (req, res, next) {
+  res.send('Hello World <br> SERVER ROOT : ' + Tape.getConfig().root);
 }
 ```

@@ -6,6 +6,7 @@ Tape.start({
     port: 3000,
     logs: "./logs",
     views: "./views",
+    assets: "./assets",
     static: [
         "./public",
         "./bower_components",
