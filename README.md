@@ -7,10 +7,11 @@
 ```
 
 #### Usage
+start
 ```js
 // app.js
 const Tape = require('nodejs-tape');
-Tape.createApp({
+Tape.start({
     root: __dirname,
     name: "nodejs-tape",
     port: 3000,
@@ -43,8 +44,9 @@ Tape.createApp({
         }
     ]
 })
-
-// ./routes/index.js
+```
+router
+```js
 'use strict';
 
 exports.routes = {
