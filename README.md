@@ -56,7 +56,7 @@ router
 ```js
 // routes/index.js
 'use strict';
-const Tape = require('../../index');
+const Tape = require('nodejs-tape');
 
 exports.routes = {
   '/': { get: 'index' },
