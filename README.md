@@ -1,9 +1,9 @@
 # nodejs-tape
-> a nodejs framework
+> express-based nodejs library
 
 #### Version
 ```
-1.2.0
+1.0.0
 ```
 
 #### Install
@@ -24,6 +24,7 @@ Tape.start({
     views: "./views",
     upload: "./assets/upload",
     storage: "./assets/storage",
+    tokenSecretKey: "token-secret-key",
     static: [
         "./public",
         "./bower_components",
@@ -60,10 +61,10 @@ const Tape = require('nodejs-tape');
 
 exports.routes = {
   '/': { get: 'index' },
-  '/upload': { post: Tape.createUploader() },
+  '/upload': { post: Tape.createUploadRoute() },
 }
 
 exports.index = function (req, res, next) {
-  res.send('Hello World <br> SERVER ROOT : ' + Tape.getConfig().root);
+  res.send('hello world <br> server root : ' + Tape.getConfig().root);
 }
 ```
