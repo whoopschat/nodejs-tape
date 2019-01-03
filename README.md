@@ -1,11 +1,6 @@
 # nodejs-tape
 > express-based nodejs library
 
-#### Version
-```
-1.0.0
-```
-
 #### Install
 ```
 > npm install nodejs-tape --save-dev
