@@ -9,11 +9,14 @@ exports.routes = {
 }
 
 exports.login = function (req, res, next) {
-  res.send('token : ' + Tape.createAuthToken('user9527'));
+  res.send('token : ' + Tape.createToken({
+    _id: '9527',
+    type: 'user'
+  }));
 }
 
 exports.user = function (req, res, next) {
-  res.send('user : ' + req.authUserId);
+  res.send('user : ' + JSON.stringify(req.authUser));
 }
 
 exports.index = function (req, res, next) {
