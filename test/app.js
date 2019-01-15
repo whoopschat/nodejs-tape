@@ -6,6 +6,7 @@ Tape.start({
     port: 3000,
     logs: "./logs",
     views: "./views",
+    tokenExpireIn: 60 * 86400,
     tokenSecretKey: "token-secret-key",
     static: [
         "./public",
@@ -24,7 +25,7 @@ Tape.start({
         function (err, req, res, next) {
             let _Error = {
                 code: err.code || err.status || 500,
-                msg: err.msg || err.toString(),
+                msg: err.msg || err.message || err.toString(),
             }
             if (!_Error.code) {
                 _Error.code = 500;

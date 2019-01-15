@@ -1,7 +1,7 @@
 {
   "name": "nodejs-tape",
   "version": "1.7.0",
-  "description": "",
+  "description": "express-based nodejs library",
   "main": "index.js",
   "scripts": {
     "start": "node ./test/app.js",
